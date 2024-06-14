@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 // POST route to fetch and store temperature data
 app.post('/fetch_data', async function (req, res) {
   const cityName = req.body.city;
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=d7b88ee07fb5e40ee8dd89b0229605f5`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=`;
 
   try {
     const response = await axios.get(url);
